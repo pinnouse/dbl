@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://top.gg/bot/pokecord -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Pokecord | Discord Bots</title>
+    <link rel="stylesheet" href="./Discord Bots_files/bulma.css" type="text/css">
+    <link rel="stylesheet" href="./Discord Bots_files/thenewstyle.css">
+    <link rel="stylesheet" href="./Discord Bots_files/button.css">
+    <link rel="stylesheet" href="./Discord Bots_files/icon.css">
+
+    <meta name="mobile-web-app-capable" content="no">
+    <meta name="theme-color" content="#7289DA">
+    <link rel="icon" href="https://top.gg/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" async="" src="./Discord Bots_files/analytics.js.download"></script>
+    <script src="./Discord Bots_files/306074476768832" async=""></script>
+    <script async="" src="./Discord Bots_files/fbevents.js.download"></script>
+    <script async="" src="./Discord Bots_files/analytics.js.download"></script>
+    <script async="" src="./Discord Bots_files/beacon.js.download"></script>
+    <script>
+        if (localStorage.getItem('dark') === 'true') {
+            let theme_node = document.createElement('link');
+            theme_node.id = 'dtssheet';
+            theme_node.rel = 'stylesheet';
+            theme_node.href = '/stylesheets/darktheme.css';
+            document.head.appendChild(theme_node);
+            localStorage.setItem('dark', 'true');
+        }
+    </script>
+    <script type="text/javascript" src="./Discord Bots_files/3820.js.download"></script>
+
+    <meta name="description"
+        content="NEW: Galarian &amp; Generation VIII Pokémon! Pokecord allows you to catch, train, and battle pokémon while talking to your friends in Discord!">
+
+    <link rel="canonical" href="https://top.gg/bot/pokecord">
+
+
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:title" content="Pokecord">
+    <meta name="twitter:description"
+        content="NEW: Galarian &amp; Generation VIII Pokémon! Pokecord allows you to catch, train, and battle pokémon while talking to your friends in Discord!">
+    <meta name="twitter:image"
+        content="https://images.discordapp.net/avatars/365975655608745985/cc240e6b7440fb1b123fa804d2ae5277.png?size=512">
+
+    <meta property="og:site_name" value="Discord Bot List">
+    <meta property="og:title" content="Pokecord">
+    <meta property="og:url" content="https://top.gg/">
+    <meta property="og:description"
+        content="NEW: Galarian &amp; Generation VIII Pokémon! Pokecord allows you to catch, train, and battle pokémon while talking to your friends in Discord!">
+    <meta property="og:image"
+        content="https://images.discordapp.net/avatars/365975655608745985/cc240e6b7440fb1b123fa804d2ae5277.png?size=512">
+    <!-- Venatus Market v3 -->
+    <script>
+        (function () {
+            document.write('<div id="vmv3-ad-manager" style="display:none"></div>');
+            document
+                .getElementById("vmv3-ad-manager")
+                .innerHTML = '<iframe id="vmv3-frm" src="javascript:\'<html><body></body></html>\'" width="0" height="0" data-mode="scan" data-site-id="5b608a2046e0fb0001330d9b"></iframe>';
+            var loaderFrame = document.getElementById("vmv3-frm");
+            var loaderFrameWindow = loaderFrame.contentWindow ? loaderFrame.contentWindow : loaderFrame.contentDocument;
+            loaderFrameWindow.document.open();
+            loaderFrameWindow.document.write('<scr' + 'ipt src="https://hb.vntsm.com/v3/live/ad-manager.min.js" type="text/javascript" async>' + '</scr' + 'ipt>');
+            loaderFrameWindow.document.close();
+        })();
+    </script>
+</head>
+
+<body onload="track Campaign BotPageImpression(&#39;&#39;);">
+    <div id="vmv3-ad-manager" style="display:none"><iframe id="vmv3-frm"
+            src="javascript:&#39;&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;&#39;" width="0" height="0"
+            data-mode="scan" data-site-id="5b608a2046e0fb0001330d9b"
+            src="./Discord Bots_files/saved_resource.html"></iframe></div>
+    <!-- / Venatus Market v3 -->
+    <style>
+        .titleandvote {
+            font: 600 25px "Karla", sans-serif;
+            color: #7289da;
+        }
+
+        .titleandvote .votebutton {
+            margin-top: 40px;
+            width: 130px;
+            align-items: center;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .donate:hover {
+            cursor: not-allowed !important;
+            background-color: #A9A9A9 !important;
+            color: #D3D3D3 !important;
+        }
+
+        .mobile-sponsor {
+            background-color: #7289da;
+            padding: 5px;
+            border-radius: 3px;
+            margin: 10px;
+            text-decoration: none;
+            font-family: 'Karla', sans-serif;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            display: none;
+
+        }
+
+        .mobile-sponsor .button-cta-sponsor {
+            border-radius: 4px;
+            border: 1px solid lightgrey;
+            padding: 3px;
+            display: inline-block;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-top: 4px;
+            margin-bottom: 0;
+            transition: 0.2s;
+        }
+
+        .mobile-sponsor .button-cta-sponsor:hover {
+            background-color: white;
+            color: #624ba8;
+        }
+
+        .mobile-sponsor .android {
+            margin-left: 2px;
+        }
+
+        .mobile-sponsor .apple {
+            margin-right: 6px;
+        }
+
+        @media only screen and (max-width: 842px) {
+            .mobile-sponsor {
+                display: block;
+            }
+        }
+    </style>
+
+
+
+
+    <section class="page" id="bot-details-page">
+        <div class="shapes-background shapes-1"></div>
+        <article class="wrapper-page">
+
+            <nav class="is-widescreen is-mobile" id="menu">
+
+                <div class="alert" id="migration_2019_10">
+                    <a href="https://medium.com/discord-bots/announcing-top-gg-the-next-phase-of-discord-bots-2ac3eb3b81bd"
+                        style="text-decoration: none;color:#fff;" target="_blank"><i class="icon class bullhorn"></i>
+                        Discord Bots has moved to <span class="highlighed-word">TOP.GG</span>! </a><a
+                        href="https://medium.com/discord-bots/announcing-top-gg-the-next-phase-of-discord-bots-2ac3eb3b81bd"
+                        style="text-decoration: none;color:#fff" target="_blank"><span style="cursor: pointer;"
+                            class="alert-cta"> Find out why </span></a> <span class="dismiss"
+                        onclick="dismissAlert()"><i class="icon close icon"></i></span>
+                </div>
+                <script>
+                    let dismissedAlerts = JSON.parse(localStorage.getItem('dismissedAlerts')) || [];
+
+                    const alertBanner = document.querySelector('.alert');
+                    if (dismissedAlerts.includes(alertBanner.id)) alertBanner.style.display = 'none';
+
+                    function dismissAlert() {
+                        alertBanner.style.display = 'none';
+                        dismissedAlerts.push(alertBanner.id);
+                        localStorage.setItem('dismissedAlerts', JSON.stringify(dismissedAlerts));
+                    }
+                </script>
+
+                <style>
+                    @media only screen and (max-width: 842px) {
+                        .alert {
+                            display: none;
+                        }
+                    }
+
+                    .highlighed-word {
+                        text-decoration: underline !important;
+                        font-weight: 500 !important;
+                    }
+
+                    .alert {
+                        font-weight: 100 !important;
+                        transition: 0.2s;
+                        background-color: #D05F3F !important;
+                    }
+
+                    .alert:hover {
+                        background-color: #624ba8;
+                    }
+
+                    .alert-cta {
+                        border: 1px solid lightgrey;
+                        padding: 3px;
+                        border-radius: 4px;
+                        transition: 0.2s;
+                        margin-left: 5px;
+                    }
+
+                    .alert-cta:hover {
+                        background-color: white;
+                        color: #624ba8;
+                    }
+
+                    .dismiss {
+                        float: right;
+                        cursor: pointer;
+                    }
+                </style>
+                <input type="checkbox" id="show-menu">
+                <a class="mobile-logo" id="mobile-home" href="https://top.gg/"><img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzNyIgdmlld0JveD0iMCAwIDMwIDM3Ij4KICAgIDxnIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTIyLjAxIDcuODg2VjUuNDUyYy45Ny0uNTExIDEuNDc4LTEuNDYgMS40NzgtMi41MzFDMjMuNDg4IDEuMzE0IDIyLjE4IDAgMjAuNTgxIDBjLTEuNTk4IDAtMi45MDYgMS4zMTQtMi45MDYgMi45MiAwIDEuMDcxLjQ2IDEuOTk2IDEuNDI5IDIuNTA3djIuNDU5aC04LjcyVjUuNDI3YTIuOTI3IDIuOTI3IDAgMCAwIDEuNDMtMi41MDZDMTEuODEzIDEuMzE0IDEwLjUwNCAwIDguOTA2IDAgNy4zMDggMCA2IDEuMzE0IDYgMi45MmEyLjkgMi45IDAgMCAwIDEuNDc4IDIuNTMydjIuNDM0SDIyLjAxeiIvPgogICAgICAgIDxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTI2LjM4OSAxMGMxLjk0NCAwIDMuNTE4IDEuNTYzIDMuNjExIDMuNDAxVjM3bC0zLjYxMS0zLjg2SDMuNTE5QzEuNTc0IDMzLjE0IDAgMzEuNjY4IDAgMjkuNzM3VjEzLjQwMUMwIDExLjU2MyAxLjU3NCAxMCAzLjUxOSAxMGgyMi44N3pNMTEuNSAxOGgtM2MtLjgyNSAwLTEuNS42NzUtMS41IDEuNXYzYzAgLjgyNS42NzUgMS41IDEuNSAxLjVoM2MuODI1IDAgMS41LS42NzUgMS41LTEuNXYtM2MwLS44MjUtLjY3NS0xLjUtMS41LTEuNXptMTAgMGgtM2MtLjgyNSAwLTEuNS42NzUtMS41IDEuNXYzYzAgLjgyNS42NzUgMS41IDEuNSAxLjVoM2MuODI1IDAgMS41LS42NzUgMS41LTEuNXYtM2MwLS44MjUtLjY3NS0xLjUtMS41LTEuNXoiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                        alt="Discord Bots" title="Discord Bots"></a>
+                <label id="menu-trigger" for="show-menu">
+                    <span class="menu-bar menu-bar-1 white"></span>
+                    <span class="menu-bar menu-bar-2 white"></span>
+                    <span class="menu-bar menu-bar-3 white"></span>
+                </label>
+                <div class="menu container">
+                    <ul>
+                        <li><a class="logo" id="home" href="https://top.gg/"><img
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzNyIgdmlld0JveD0iMCAwIDMwIDM3Ij4KICAgIDxnIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTIyLjAxIDcuODg2VjUuNDUyYy45Ny0uNTExIDEuNDc4LTEuNDYgMS40NzgtMi41MzFDMjMuNDg4IDEuMzE0IDIyLjE4IDAgMjAuNTgxIDBjLTEuNTk4IDAtMi45MDYgMS4zMTQtMi45MDYgMi45MiAwIDEuMDcxLjQ2IDEuOTk2IDEuNDI5IDIuNTA3djIuNDU5aC04LjcyVjUuNDI3YTIuOTI3IDIuOTI3IDAgMCAwIDEuNDMtMi41MDZDMTEuODEzIDEuMzE0IDEwLjUwNCAwIDguOTA2IDAgNy4zMDggMCA2IDEuMzE0IDYgMi45MmEyLjkgMi45IDAgMCAwIDEuNDc4IDIuNTMydjIuNDM0SDIyLjAxeiIvPgogICAgICAgIDxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTI2LjM4OSAxMGMxLjk0NCAwIDMuNTE4IDEuNTYzIDMuNjExIDMuNDAxVjM3bC0zLjYxMS0zLjg2SDMuNTE5QzEuNTc0IDMzLjE0IDAgMzEuNjY4IDAgMjkuNzM3VjEzLjQwMUMwIDExLjU2MyAxLjU3NCAxMCAzLjUxOSAxMGgyMi44N3pNMTEuNSAxOGgtM2MtLjgyNSAwLTEuNS42NzUtMS41IDEuNXYzYzAgLjgyNS42NzUgMS41IDEuNSAxLjVoM2MuODI1IDAgMS41LS42NzUgMS41LTEuNXYtM2MwLS44MjUtLjY3NS0xLjUtMS41LTEuNXptMTAgMGgtM2MtLjgyNSAwLTEuNS42NzUtMS41IDEuNXYzYzAgLjgyNS42NzUgMS41IDEuNSAxLjVoM2MuODI1IDAgMS41LS42NzUgMS41LTEuNXYtM2MwLS44MjUtLjY3NS0xLjUtMS41LTEuNXoiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                                    alt="Discord Bots" title="Discord Bots"></a></li>
+                        <li><a href="https://top.gg/">Home</a></li>
+                        <li><a href="https://top.gg/api/docs">API</a></li>
+                        <li><a href="https://discord.gg/EYHTgJX"
+                                onclick="gtag(&#39;event&#39;, &#39;DBL Discord Join&#39;, {&#39;event_category&#39;: &#39;DBL Links&#39;,&#39;event_label&#39;: &#39;DBL Discord Join&#39;,&#39;value&#39;: 1});">Join
+                                Discord</a></li>
+                        <li><a href="https://medium.com/discord-bots">Blog</a></li>
+                        <li><a href="https://top.gg/servers">Discord Servers</a></li>
+
+
+
+                        <li><a href="https://top.gg/advertise">Advertise</a></li>
+
+
+                        <li><a href="https://top.gg/login?redir=%2Fbot%2Fpokecord">Login</a></li>
+
+                    </ul>
+                </div>
+
+            </nav>
+
+            <script>
+
+
+// const Http = new XMLHttpRequest();
+// const url='https://top.gg/api/weekend';
+// Http.open("GET", url);
+// Http.send();
+// Http.onreadystatechange=(e)=>{
+// var a = Http.responseText
+// var b = JSON.parse(a);
+// if (b.is_weekend === true) {
+//   document.getElementById("doublevoting").style.display = "block";
+// }
+// }
+
+            </script>
+
+            <div class="modal" id="upvotenologin">
+                <div class="modal-background" onclick="closeModal(this)" style="z-index: -50;"></div>
+                <div class="modal-content" style="background-color: white; padding: 20px;">
+
+                    <p style="margin-bottom: 15px;">You must be logged in to upvote bots! <a
+                            href="https://top.gg/login?redir=%2Fbot%2Fpokecord"><strong>Login</strong></a></p>
+                    <div></div>
+
+                    <button style="background-color: #2E4492!important" class="button colorr is-primary"
+                        onclick="closeModal(this.parentNode)">Close
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div style="width:100%;text-align:center;margin-bottom: 30px; margin-top: 15px;">
+                <div class="vm-placement" data-id="5b608e9746e0fb0001318a60"></div>
+            </div>
+
+
+
+
+            <div id="details">
+
+                <div class="container is-widescreen" style="border-bottom:none">
+
+                    <div class="columns is-tablet is-desktop">
+
+                        <div class="column is-4-tablet is-3-desktop is-offset-4-tablet is-offset-1-desktop"
+                            id="bot-img">
+
+                            <div class="bot-img"><img style="background-color: transparent;"
+                                    src="./Discord Bots_files/cc240e6b7440fb1b123fa804d2ae5277.png">
+                            </div>
+                        </div>
+                        <div class="column is-10-mobile is-two-thirds-tablet is-4-desktop is-offset-2-tablet is-offset-1-mobile is-offset-1-desktop"
+                            id="bot-info"><span class="status green">
+                                ONLINE</span>
+                            <p class="is-flex"><span class="bot-name">
+                                    Pokecord</span>
+
+                                <a alt="Certified Bot" href="https://top.gg/certification"><img
+                                        src="./Discord Bots_files/certified.svg" alt="Certified Bots"
+                                        title="Certified Bot" width="25px" height="25px"
+                                        style="transform: translate(5px, 2px) scale(1.2);">
+                                </a>
+
+                                <button class="btn-like btn is-flex" id="upvotebutton"
+                                    onclick="location.href=&#39;/bot/365975655608745985/vote&#39;;">
+                                    <img
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgMTEgNyI+CiAgICA8cGF0aCBmaWxsPSIjMzM0REFEIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0xMC42NzYgNS42MTVMOS41ODQgNi42MzNhLjQxOC40MTggMCAwIDEtLjI5Ni4xMTcuNDE4LjQxOCAwIDAgMS0uMjk2LS4xMTdMNS41IDMuMzU4IDIuMDA4IDYuNjMzYS40MTguNDE4IDAgMCAxLS4yOTYuMTE3LjQxOC40MTggMCAwIDEtLjI5Ni0uMTE3TC4zMjQgNS42MTVhLjM3MS4zNzEgMCAwIDEtLjEyNS0uMjhjMC0uMTEuMDQyLS4yMDMuMTI1LS4yODFsNC44OC00LjU3QS40MTguNDE4IDAgMCAxIDUuNS4zNjZjLjExNCAwIC4yMTMuMDQuMjk2LjExOGw0Ljg4IDQuNTdhLjM3MS4zNzEgMCAwIDEgLjEyNS4yOC4zNzEuMzcxIDAgMCAxLS4xMjUuMjgxeiIvPgo8L3N2Zz4K">
+                                    <span id="points">
+                                        741,016</span></button>
+                            </p>
+                            <span class="lib"><a id="libclick" href="https://top.gg/search?q=library:%20Other">
+                                    Other</a></span>
+                            <p class="bot-description">
+                                NEW: Galarian &amp; Generation VIII Pokémon! Pokecord allows you to catch, train, and
+                                battle pokémon while talking to your friends in Discord!
+                            </p>
+                            <div class="titleandvote">
+                                <a target="_blank"
+                                    onclick="gtag(&#39;event&#39;, &#39;Bot Invite&#39;, {&#39;event_category&#39;: &#39;DBL Links&#39;,&#39;event_label&#39;: &#39;Bot Invite&#39;,&#39;value&#39;: 1});"
+                                    href="https://discordapp.com/oauth2/authorize?client_id=365975655608745985&amp;scope=bot&amp;permissions=387072"
+                                    rel="nofollow"><span class="votebutton btn btn-orange btn-2x"
+                                        style="cursor: pointer!important;">Invite</span></a>
+
+
+                                <a href="https://top.gg/bot/365975655608745985/vote"><span
+                                        class="votebutton btn btn-orange btn-2x" style="cursor: pointer!important;">
+                                        Vote
+                                    </span></a>
+
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+                        <style>
+                            video:hover {
+                                cursor: pointer;
+                            }
+                        </style>
+
+
+
+
+                        <div class="column is-10-mobile is-two-thirds-tablet is-4-desktop is-offset-2-tablet is-offset-1-mobile is-offset-1-desktop"
+                            id="bot-stats">
+                            <div class="vm-placement" data-id="5b608e8946e0fb0001baabbd"></div>
+                        </div>
+
+
+                        <!--
+         <div id="twitch-embed"></div>
+                        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                        <script type="text/javascript">
+                         var embed = new Twitch.Embed("twitch-embed", {
+                            width: 490,
+                            height: 280,
+                           channel: "stpeach",
+                         layout: "video",
+                          muted: "true",
+                         });
+
+                          embed.addEventListener(Twitch.Embed.AUTHENTICATE, function(user) {
+                          console.log(user.login + ' just logged in');
+                       });
+
+                                embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+                            var player = embed.getPlayer();
+                            player.play();
+                         setTimeout(function() {
+                             if (player.getMuted() == false) {
+                                    ga('send', 'event', 'TwitchPlayerUnmute', 'frontpage');
+                                }
+                            }, 3000)
+                          });
+                        </script>
+-->
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container is-widescreen">
+                <div class="columns is-tablet is-desktop">
+                    <div class="left-container">
+                        <div class="column ">
+                            <p>
+                                Pokecord Commands Prefix: <span class="color-blue" id="prefix"><code>
+										p! (Customizable)</code></span></p>
+
+                            <div class="serversshards">
+
+                                <a><span class="votebutton btn btn-orange btn-2x" style="cursor: pointer!important;">
+                                        990,278
+                                        servers
+                                    </span></a>
+
+
+                                <span class="votebutton btn btn-orange btn-2x" style="cursor: pointer!important;">
+                                    1,024 shards</span>
+
+                            </div>
+
+                            <p class="bot-btnss">
+
+                                <a class="botpagebutton" rel="nofollow" target="_blank"
+                                    onclick="track Campaign WebClick(&#39;&#39;);" href="https://www.pokecord.com/"
+                                    id="websitelink">Visit
+                                    website</a>
+
+
+
+
+                                <a class="botpagebutton" id="report"
+                                    href="https://top.gg/bot/365975655608745985/report">Report</a>
+
+
+
+
+
+                                <a class="botpagebutton" href="https://discord.gg/pokecord" id="support"
+                                    onclick="gtag(&#39;event&#39;, &#39;Support Server Join&#39;, {&#39;event_category&#39;: &#39;DBL Links&#39;,&#39;event_label&#39;: &#39;Support Server Join&#39;,&#39;value&#39;: 1});">Join
+                                    Support Server</a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column ">
+                        <p class="bot-tags-title">Bot Tags:</p>
+                        <p class="btns" id="tags">
+
+                            <a class="atag" href="https://top.gg/tag/anime" style="margin:8px;">
+                                Anime
+                            </a>
+
+                            <a class="atag" href="https://top.gg/tag/fun" style="margin:8px;">
+                                Fun
+                            </a>
+
+                            <a class="atag" href="https://top.gg/tag/economy" style="margin:8px;">
+                                Economy
+                            </a>
+
+                            <a class="atag" href="https://top.gg/tag/social" style="margin:8px;">
+                                Social
+                            </a>
+
+                            <a class="atag" href="https://top.gg/tag/leveling" style="margin:8px;">
+                                Leveling
+                            </a>
+
+                            <a class="atag" href="https://top.gg/tag/game" style="margin:8px;">
+                                Game
+                            </a>
+
+                            <a class="atag" href="https://top.gg/tag/pokemon" style="margin:8px;">
+                                Pokemon
+                            </a>
+
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="container is-widescreen">
+
+
+                    <div class="owners">
+
+
+                        <p id="createdby">Created By:
+
+
+
+
+                            <b><a href="https://top.gg/user/668614189350387761">
+                                    <img src="./Discord Bots_files/d51f1b6d3ca2db8f9dc9ef9196c38494.png">
+                                    <span>
+                                        pokecord-owner<i>#
+                                            0443</i></span>
+
+
+
+                                </a></b>
+
+
+                        </p>
+
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="vm-placement" data-id="5b608e9746e0fb0001318a60"></div>
+                </div>
+
+
+                <div class="container is-widescreen">
+
+                    <div class="longdescription">
+                        <div class="content">
+                            <!-- CODE GOES IN HERE -->
+
+                            <!--Hiding things-->
+                            <style>
+                                .content { visibility: hidden; }
+                                
+                                #bot-details-page > article > div.container.is-widescreen > div.columns.is-tablet.is-desktop > div.column,
+                                #bot-details-page > article > div.container.is-widescreen > div.columns.is-tablet.is-desktop > div.left-container > div > p:nth-child(1),
+                                #bot-details-page > article > div.container.is-widescreen > div.columns.is-tablet.is-desktop > div.left-container > div > div,
+                                #bot-details-page > article > div.container.is-widescreen > div:nth-child(2),
+                                #upvotebutton,
+                                #bot-info > span.lib,
+                                #bot-info > p.bot-description
+                                 {
+                                    display: none !important;
+                                }
+                            </style>
+                            
+                            
+
+                            <!-- CODE ENDS HERE -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container is-widescreen">
+
+                </div>
+                <div style="text-align: center;">
+                    <div class="vm-placement" data-id="5b608e7346e0fb00011c6374" style="display:none"></div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <script>
+        function request(opts, callback) {
+            var xhr = new XMLHttpRequest()
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState != 4) return
+                if (xhr.status >= 200 && xhr.status < 400) {
+                    return callback(null, xhr.getResponseHeader("Content-Type") != null && xhr.getResponseHeader("Content-Type").indexOf("application/json") != -1 ? JSON.parse(xhr.responseText) : xhr.responseText, xhr)
+                }
+                var msg = xhr.responseText || "Error"
+                callback(Error(msg), null, xhr)
+            }
+            xhr.open(opts.method || "GET", opts.url)
+            for (var key in opts.headers) {
+                xhr.setRequestHeader(key, opts.headers[key])
+            }
+            xhr.send(opts.data)
+            return xhr
+        }
+
+        function closeModal(el) {
+            el.parentNode.classList.remove('is-active');
+        }
+    </script>
+    <script>
+        var auca = location.search.substr(1).split('-'), aucb = parseInt; if (auca[0] == 'campaign=auctions') fetch("/api/auctions/click", { method: "POST", body: JSON.stringify([aucb(auca[1]), aucb(auca[2])]), headers: { "Content-Type": "application/json" } })
+    </script>
+    <div id="cdm-zone-end"></div>
+    <!-- Begin comScore -->
+    <script>
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "6035118" });
+        (function () {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+    </script>
+    <noscript>
+        <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035118&amp;cv=2.0&amp;cj=1" />
+    </noscript>
+    <!-- End comScore -->
+
+    <!-- Nielsen Online SiteCensus -->
+    <div><img src="./Discord Bots_files/m" width="1" height="1" alt=""></div>
+    <!-- End Nielsen Online SiteCensus -->
+
+
+    <!-- Venatus Market v3 -->
+    <script>
+        (function () {
+            document.write('<div id="vmv3-ad-manager" style="display:none"></div>');
+            document
+                .getElementById("vmv3-ad-manager")
+                .innerHTML = '<iframe id="vmv3-frm" src="javascript:\'<html><body></body></html>\'" width="0" height="0" data-mode="scan" data-site-id="5b608a2046e0fb0001330d9b"></iframe>';
+            var loaderFrame = document.getElementById("vmv3-frm");
+            var loaderFrameWindow = loaderFrame.contentWindow ? loaderFrame.contentWindow : loaderFrame.contentDocument;
+            loaderFrameWindow.document.open();
+            loaderFrameWindow.document.write('<scr' + 'ipt src="https://hb.vntsm.com/v3/live/ad-manager.min.js" type="text/javascript" async>' + '</scr' + 'ipt>');
+            loaderFrameWindow.document.close();
+        })();
+    </script>
+    <div id="vmv3-ad-manager" style="display:none"></div>
+    <!-- / Venatus Market v3 -->
+
+    <script async="" src="./Discord Bots_files/f.txt"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1065800822998704",
+            enable_page_level_ads: false
+        });
+    </script>
+
+
+    <script>
+
+        console.log("GA Loaded");
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-98194944-1', 'auto');
+        ga('send', 'pageview');
+
+
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '306074476768832');
+        fbq('track', 'PageView');
+
+
+    </script>
+
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=306074476768832&ev=PageView&noscript=1" /></noscript>
+
+
+    <script>
+        /**
+         * Function that tracks a click on an outbound link in Analytics.
+         * This function takes a valid URL string as an argument, and uses that URL string
+         * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+         * using 'navigator.sendBeacon' in browser that support it.
+         */
+        var trackOutboundLink = function (url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon',
+                'hitCallback': function () { document.location = url; }
+            });
+        };
+        var trackCampaignImpression = function (name, location) {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: "campaign-" + name,
+                eventAction: 'impression',
+                eventLabel: (window.location.href === undefined ? "unknown" : window.location.href)
+            });
+        };
+        var trackCampaignBotPageImpression = function (name) {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: "campaign-" + name,
+                eventAction: 'botPageImpression',
+                eventLabel: (window.location.href === undefined ? "unknown" : window.location.href)
+            });
+        };
+        var trackCampaignServerInvite = function (name) {
+
+            ga('send', {
+                hitType: 'event',
+                eventCategory: "campaign-" + name,
+                eventAction: 'serverInvite',
+                eventLabel: (window.location.href === undefined ? "unknown" : window.location.href)
+            });
+        };
+        var trackCampaignWebClick = function (name, label) {
+            if (label === undefined) {
+                label = (window.location.href === undefined ? "unknown" : window.location.href);
+            }
+
+            ga('send', {
+                hitType: 'event',
+                eventCategory: "campaign-" + name,
+                eventAction: 'webClick',
+                eventLabel: (window.location.href === undefined ? "unknown" : window.location.href)
+            });
+        };
+        var trackRegularServerInvite = function (name) {
+
+            ga('send', {
+                hitType: 'event',
+                eventCategory: "organic-" + name,
+                eventAction: 'serverInvite',
+                eventLabel: (window.location.href === undefined ? "unknown" : window.location.href)
+            });
+        };
+        var trackRegularWebClick = function (name, label) {
+            if (label === undefined) {
+                label = (window.location.href === undefined ? "unknown" : window.location.href);
+            }
+
+
+            ga('send', {
+                hitType: 'event',
+                eventCategory: "organic-" + name,
+                eventAction: 'webClick',
+                eventLabel: label
+            });
+        }
+        var trackRegularBotPageImpression = function (name) {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: "organic-" + name,
+                eventAction: 'botPageImpression',
+                eventLabel: (window.location.href === undefined ? "unknown" : window.location.href)
+            });
+        };
+        var trackUpvote = function (id, label) {
+            if (label === undefined) {
+                label = (window.location.href === undefined ? "unknown" : window.location.href);
+            }
+
+            ga('send', {
+                hitType: 'event',
+                eventCategory: "upvote",
+                eventAction: id,
+                eventLabel: label
+            });
+        }
+
+        var myConfObj = {
+            iframeMouseOver: false
+        }
+        window.addEventListener('blur', function () {
+            if (myConfObj.iframeMouseOver) {
+                if (window.campaign === undefined) {
+                    trackRegularWebClick(window.botName, 'iframe');
+                } else {
+                    trackCampaignWebClick(window.campaign, 'iframe');
+                }
+            }
+        });
+
+        if (document.getElementById('botiframe')) {
+            document.getElementById('botiframe').addEventListener('mouseover', function () {
+                myConfObj.iframeMouseOver = true;
+            });
+            document.getElementById('botiframe').addEventListener('mouseout', function () {
+                myConfObj.iframeMouseOver = false;
+            });
+        }
+
+        var setCampaignIframe = function (campaign) {
+            window.campaign = campaign;
+        }
+
+        var setRegularIframe = function (botName) {
+            window.botName = botName;
+        }
+    </script>
+
+
+    <script>
+        var outlinkDuplicate = function (id) {
+            document.getElementById(id).click();
+        }
+    </script>
+
+    <!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        if (!localStorage.getItem('HasSeenAnnoyingPopup')) {
+            var modal = document.createElement('div');
+            modal.classList.add('modal');
+            modal.innerHTML = '<div class="modal-background" style="z-index: -50;"></div>\
+                <div class="modal-content" style="background-color: white; padding: 20px;">\
+                    <p style="margin-bottom: 15px;">We use cookies to understand how you use our site and to improve your experience. This includes personalizing content and advertising. To learn more, <a href="https://top.gg/terms"><strong>click here</strong></a>. By continuing to use our site, you accept our use of cookies, revised Privacy Policy and Terms of Use.</p>\
+                    <div></div>\
+                    <button style="background-color: #2E4492!important" class="button colorr is-primary" onClick="this.parentNode.parentNode.classList.remove(\'is-active\');localStorage.setItem(\'HasSeenAnnoyingPopup\', true)">Close</button>\
+                </div>';
+            modal.classList.add('is-active');
+            document.body.appendChild(modal);
+        }
+    });
+</script> -->
+
+
+
+
+</body>
+
+</html>
