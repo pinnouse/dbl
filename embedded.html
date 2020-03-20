@@ -1,0 +1,288 @@
+<!-- CODE GOES IN HERE -->
+
+                            <!--Hiding things-->
+                            <style>
+
+                                #bot-details-page .bot-img {
+                                    margin: 0 auto;
+                                }
+
+                                .columns .bot-img {
+                                    box-shadow: unset !important;
+                                }
+
+                                div.container:nth-child(1) > div:nth-child(1) {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                }
+
+                                #bot-details-page #details .column,
+                                .left-container {
+                                    margin: 0 auto;
+                                }
+
+                                #bot-details-page .status + p {
+                                    justify-content: center;
+                                    margin: 0;
+                                }
+
+                                .bot-name {
+                                    font-size: 38pt !important;
+                                }
+                                p.is-flex > a:nth-child(2) > img:nth-child(1) {
+                                    transform: translate(8px, 2px) scale(1.8) !important;
+                                }
+
+                                div#server-count {
+                                    text-align: center;
+                                }
+                                span.server-count {
+                                    user-select: none;
+                                    font-weight: bold;
+                                    display: inline-block;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                }
+
+                                .dark span.server-count {
+                                    color: #ffffff;
+                                }
+
+                                div.container:nth-child(6) {
+                                    display: flex;
+                                    flex-direction: column-reverse;
+                                    margin: 0;
+                                    width: 100%;
+                                    max-width: 100%;
+                                    padding: 0;
+                                }
+
+                                .serversshards {
+                                    visibility: hidden;
+                                }
+
+                                .btn-orange {
+                                    background: #a8995646;
+                                    color: #523c13;
+                                    padding: 12px;
+                                    margin: 8px 14px;
+                                    border-radius: 10px;
+                                    transition: all .12s !important;
+                                }
+
+                                .dark .btn-orange {
+                                    color: #ffffff;
+                                }
+
+                                .btn-orange:hover {
+                                    opacity: 1;
+                                    background: #d6ab1085 !important;
+                                }
+
+                                .dark .btn-orange:hover {
+                                    background: #e7cc67b0 !important;
+                                }
+
+                                #bot-details-page > article > div.container.is-widescreen > div.columns.is-tablet.is-desktop {
+                                    display: flex;
+                                }
+
+                                .bg {
+                                    background: url("https://cdn.discordapp.com/attachments/177156222007377920/690468062054318080/SS.png") no-repeat center center fixed;
+                                    background-size: cover;
+                                    z-index: -1;
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    filter: blur(12px);
+                                    opacity: .23;
+                                }
+
+                                html.dark {
+                                    background: linear-gradient(0deg, #222020 40%, #444241) !important;
+                                }
+
+                                #bot-details-page #details .container {
+                                    border: none;
+                                }
+
+                                div.container:nth-child(4) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                    padding: 0;
+                                }
+
+                                .longdescription {
+                                    padding: 0;
+                                    margin-top: 60px;
+                                }
+
+                                .longdescription .content {
+                                    box-shadow: none !important;
+                                    border-radius: 0 !important;
+                                    background: #ffffff !important;
+                                    padding: 20px 0 80px !important;
+                                }
+                                
+                                #bot-details-page > article > div.container.is-widescreen > div.columns.is-tablet.is-desktop > div.column,
+                                #bot-details-page > article > div.container.is-widescreen > div.columns.is-tablet.is-desktop > div.left-container > div > p:nth-child(1),
+                                span.votebutton:nth-child(2),
+                                #bot-details-page > article > div.container.is-widescreen > div:nth-child(2),
+                                #websitelink,
+                                #upvotebutton,
+                                #support,
+                                #bot-info > span.lib,
+                                #bot-info > p.bot-description,
+                                #bot-stats, .status
+                                 {
+                                    display: none !important;
+                                }
+
+                                #report {
+                                    background: none;
+                                }
+
+                                .info-text {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    text-align: center;
+                                    padding: 20px;
+                                }
+
+                                .info-text > p {
+                                    margin-top: 40px;
+                                    max-width: 600px;
+                                    margin: 0 auto 40px;
+                                    font-size: 14pt;
+                                    line-height: 1.8rem;
+                                }
+
+                                .info-text > h1 {
+                                    font-weight: bold;
+                                    border-bottom: 2px solid #242424;
+                                    margin: 0 40px 20px;
+                                    padding-bottom: 10px;
+                                }
+
+                                .content > .columns {
+                                    padding: 40px 20px;
+                                    margin: 0;
+                                }
+
+                                .content img {
+                                    border-radius: 6px;
+                                }
+
+                                .discord-btn {
+                                    display: inline-block;
+                                    background: #7289da;
+                                    color: #ffffff;
+                                    height: 64px;
+                                    min-width: 60px;
+                                    min-height: 64px;
+                                    border-radius: 6px;
+                                    line-height: 56px;
+                                    font-size: 24px;
+                                    padding: 2px 16px;
+                                    transition: background .17s;
+                                }
+
+                                .discord-btn:hover {
+                                    background: #677bc4;
+                                }
+
+                                @media screen and (min-width: 769px) {
+                                    .reversed {
+                                        flex-direction: row-reverse;
+                                    }
+                                }
+
+                                .anim {
+                                    opacity: 0;
+                                }
+
+                                .slide-in-blurred-left{-webkit-animation:slide-in-blurred-left .6s cubic-bezier(.23,1.000,.32,1.000) both;animation:slide-in-blurred-left .6s cubic-bezier(.23,1.000,.32,1.000) both}
+                                .slide-in-blurred-right{-webkit-animation:slide-in-blurred-right .6s cubic-bezier(.23,1.000,.32,1.000) both;animation:slide-in-blurred-right .6s cubic-bezier(.23,1.000,.32,1.000) both}
+
+                                /* ----------------------------------------------
+                                * Generated by Animista on 2020-3-20 3:47:24
+                                * Licensed under FreeBSD License.
+                                * See http://animista.net/license for more info. 
+                                * w: http://animista.net, t: @cssanimista
+                                * ---------------------------------------------- */
+                                @-webkit-keyframes slide-in-blurred-left{0%{-webkit-transform:translateX(-1000px) scaleX(2.5) scaleY(.2);transform:translateX(-1000px) scaleX(2.5) scaleY(.2);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateX(0) scaleY(1) scaleX(1);transform:translateX(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+                                @keyframes slide-in-blurred-left{0%{-webkit-transform:translateX(-1000px) scaleX(2.5) scaleY(.2);transform:translateX(-1000px) scaleX(2.5) scaleY(.2);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateX(0) scaleY(1) scaleX(1);transform:translateX(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+                                @-webkit-keyframes slide-in-blurred-right{0%{-webkit-transform:translateX(1000px) scaleX(2.5) scaleY(.2);transform:translateX(1000px) scaleX(2.5) scaleY(.2);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateX(0) scaleY(1) scaleX(1);transform:translateX(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+                                @keyframes slide-in-blurred-right{0%{-webkit-transform:translateX(1000px) scaleX(2.5) scaleY(.2);transform:translateX(1000px) scaleX(2.5) scaleY(.2);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateX(0) scaleY(1) scaleX(1);transform:translateX(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+                            </style>
+
+                            <script
+                                src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                                integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+                                crossorigin="anonymous"></script>
+                            <script>
+                                if (localStorage.getItem('dark') === 'true') {
+                                    $('html').addClass('dark')
+                                }
+                                
+                                $(window).scroll(checkAnims)
+                                function checkAnims() {
+                                    let scrollHeight = $(window).scrollTop() + ($(window).height() * 0.7)
+                                    $('.anim').each(function(i, el) {
+                                        if (scrollHeight >= $(el).offset().top) {
+                                            $(el).addClass($(el).attr('data-anim-name') || 'slide-in-blurred-left')
+                                        }
+                                    })
+                                }
+                                checkAnims();
+                                let sCount = $('.serversshards > a:nth-child(1) > span:nth-child(1)').text().trim()
+                                $('p.is-flex').after(`
+                                    <div id="server-count"><span class="server-count">Used in ${sCount}</span></div>
+                                `)
+                            </script>
+
+                            <div class="bg"></div>
+
+                            <div class="columns is-centered">
+                                <div class="column is-one-quarter anim">
+                                    <img src="https://cdn.discordapp.com/attachments/690418920535883816/690421852232745030/catchingPokemon.gif" alt="Whoops image is supposed to be here sorry...">
+                                </div>
+                                <div class="column is-half info-text">
+                                    <h1>Catch</h1>
+                                    <p>Pokémon will randomly appear in your server, compete with your friends to be the fastest to catch it and add it to your collection!</p>
+                                </div>
+                            </div>
+                            <div class="columns is-centered reversed">
+                                <div class="column is-one-quarter anim" data-anim-name="slide-in-blurred-right">
+                                    <img src="https://cdn.discordapp.com/attachments/690418920535883816/690421852232745030/catchingPokemon.gif" alt="Whoops image is supposed to be here sorry...">
+                                </div>
+                                <div class="column is-half info-text">
+                                    <h1>Trade</h1>
+                                    <p>Level up your pokémon then battle your friends to gain more XP and credits to be used in the shop!</p>
+                                </div>
+                            </div>
+                            <div class="columns is-centered">
+                                <div class="column is-one-quarter anim">
+                                    <img src="https://cdn.discordapp.com/attachments/690418920535883816/690421852232745030/catchingPokemon.gif" alt="Whoops image is supposed to be here sorry...">
+                                </div>
+                                <div class="column is-half info-text">
+                                    <h1>Collect</h1>
+                                    <p>There's no limit to how many pokémon you can catch, so catch 'em all!</p>
+                                </div>
+                            </div>
+
+                            <div class="content" style="text-align: center !important;">
+                                <h1>Join our Discord Server</h1>
+                                <a target="_blank" href="https://discord.gg/pokecord" rel="noopener noreferrer">
+                                    <span class="discord-btn">
+                                        Official PokeCord Server
+                                    </span>
+                                </a>
+                            </div>
+                            
+
+                            <!-- CODE ENDS HERE -->
