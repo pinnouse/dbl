@@ -3,6 +3,22 @@
 <html>
 
 <head>
+    
+<!-- Venatus Market v3 -->
+<script>
+    (function() {
+    document.write('<div id="vmv3-ad-manager" style="display:none"></div>');
+    document
+    .getElementById("vmv3-ad-manager")
+    .innerHTML = '<iframe id="vmv3-frm" src="javascript:\'<html><body></body></html>\'" width="0" height="0" data-mode="scan" data-site-id="5b608a2046e0fb0001330d9b"></iframe>';
+    var loaderFrame = document.getElementById("vmv3-frm");
+    var loaderFrameWindow = loaderFrame.contentWindow ? loaderFrame.contentWindow : loaderFrame.contentDocument;
+    loaderFrameWindow.document.open();
+    loaderFrameWindow.document.write('<scr'+'ipt src="https://hb.vntsm.com/v3/live/ad-manager.min.js" type="text/javascript" async>'+'</scr'+'ipt>');
+    loaderFrameWindow.document.close();
+    })();
+    </script> 
+    <!-- / Venatus Market v3 -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>
         Pokecord | Discord Bots</title>
@@ -542,6 +558,7 @@
                                     text-align: center;
                                 }
                                 span.server-count {
+                                    font-size: 9pt;
                                     user-select: none;
                                     font-weight: bold;
                                     display: inline-block;
@@ -621,13 +638,13 @@
 
                                 .longdescription {
                                     padding: 0;
-                                    margin-top: 60px;
+                                    margin-top: 0;
                                 }
 
                                 .longdescription .content {
                                     box-shadow: none !important;
                                     border-radius: 0 !important;
-                                    background: #ffffff !important;
+                                    background: none !important;
                                     padding: 20px 0 80px !important;
                                 }
                                 
@@ -675,6 +692,19 @@
                                 .content > .columns {
                                     padding: 40px 20px;
                                     margin: 0;
+                                    background: #ffffff;
+                                    background: #ffffffcc;
+                                }
+
+                                .content > .columns.reversed {
+                                    color: #ffffff;
+                                    background: #1b1a18;
+                                    background: #1b1a18af;
+                                }
+
+                                .reversed .info-text > h1 {
+                                    color: #ffffff;
+                                    border-bottom: 2px solid #ffffff;
                                 }
 
                                 .content img {
@@ -697,6 +727,10 @@
 
                                 .discord-btn:hover {
                                     background: #677bc4;
+                                }
+
+                                .bot-btnss {
+                                    text-align: center;
                                 }
 
                                 @media screen and (min-width: 769px) {
@@ -735,29 +769,31 @@
                                 
                                 $(window).scroll(checkAnims)
                                 function checkAnims() {
-                                    let scrollHeight = $(window).scrollTop() + ($(window).height() * 0.7)
+                                    let scrollHeight = $(window).scrollTop() + ($(window).height() * 0.8)
                                     $('.anim').each(function(i, el) {
                                         if (scrollHeight >= $(el).offset().top) {
                                             $(el).addClass($(el).attr('data-anim-name') || 'slide-in-blurred-left')
                                         }
                                     })
                                 }
-                                checkAnims();
-                                let sCount = $('.serversshards > a:nth-child(1) > span:nth-child(1)').text().trim()
-                                $('p.is-flex').after(`
-                                    <div id="server-count"><span class="server-count">Used in ${sCount}</span></div>
-                                `)
+                                $(function() {
+                                    checkAnims();
+                                    let sCount = $('.serversshards > a:nth-child(1) > span:nth-child(1)').text().trim()
+                                    $('p.is-flex').after(`
+                                        <div id="server-count"><span class="server-count">Playing in over ${sCount}</span></div>
+                                    `)
+                                })
                             </script>
 
                             <div class="bg"></div>
 
                             <div class="columns is-centered">
                                 <div class="column is-one-quarter anim">
-                                    <img src="https://cdn.discordapp.com/attachments/690418920535883816/690421852232745030/catchingPokemon.gif" alt="Whoops image is supposed to be here sorry...">
+                                    <img src="https://cdn.discordapp.com/attachments/690255418798374949/690918237348560976/catchingPokemon.gif" alt="Whoops image is supposed to be here sorry...">
                                 </div>
                                 <div class="column is-half info-text">
                                     <h1>Catch</h1>
-                                    <p>Pokémon will randomly appear in your server, compete with your friends to be the fastest to catch it and add it to your collection!</p>
+                                    <p>As pokémon appear randomly in your Discord server, compete with your friends to be the first to catch and add them to your collection!</p>
                                 </div>
                             </div>
                             <div class="columns is-centered reversed">
@@ -766,7 +802,7 @@
                                 </div>
                                 <div class="column is-half info-text">
                                     <h1>Trade</h1>
-                                    <p>Level up your pokémon then battle your friends to gain more XP and credits to be used in the shop!</p>
+                                    <p>Trade with your friends or make use of our global marketplace to buy/sell pokémon from over 4 million users!</p>
                                 </div>
                             </div>
                             <div class="columns is-centered">
@@ -775,17 +811,22 @@
                                 </div>
                                 <div class="column is-half info-text">
                                     <h1>Collect</h1>
-                                    <p>There's no limit to how many pokémon you can catch, so catch 'em all!</p>
+                                    <p>Gain rewards as you build up your collectionThere's no limit to how many pokémon you can catch!</p>
                                 </div>
                             </div>
 
-                            <div class="content" style="text-align: center !important;">
-                                <h1>Join our Discord Server</h1>
-                                <a target="_blank" href="https://discord.gg/pokecord" rel="noopener noreferrer">
-                                    <span class="discord-btn">
-                                        Official PokeCord Server
-                                    </span>
-                                </a>
+                            <div class="columns is-centered">
+                                <div class="column is-full info-text">
+
+                                    <h1>hahayes join our discord server fuckers, we have cheese</h1>
+                                    <div>
+                                        <a target="_blank" href="https://discord.gg/pokecord" rel="noopener noreferrer" style="cursor: pointer !important;">
+                                            <span class="discord-btn">
+                                                Join Discord Server
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             
 

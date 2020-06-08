@@ -1,0 +1,177 @@
+<style>
+html, body {
+	background: #2C2F33;
+}
+
+code {
+	background-color: #23272A !important;
+    color: #1abc9c !important;
+	border-radius: 5px !important;
+	color: white !important;
+}
+code:hover {
+	transition: all 0.8s !important;
+	background-color: #23272A !important;
+    color: #e05454 !important;
+}
+
+.shapes-background {
+	display: none;
+}
+
+.bot-name, .bot-description {
+  	color: white !important;
+}
+
+h1, h2, h3 {
+	color: white !important
+}
+.btn-like {
+	background-color: #23272A !important;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	transition: all 0.8s;
+}
+.btn-like:hover {
+	background-color: #23272A !important;
+	color: white;
+	padding-right: 5px;
+	transition: all 0.8s;
+	border-radius: 5px;
+}
+
+#bot-details-page #details .container {
+	border-bottom: 1px solid #ccd6f800;
+	border-top: 1px solid #00000000;
+	padding: 40px 0;
+}
+
+#edit, #delete, #support, #github, #report, #websitelink {
+	background-color: #23272A !important;
+    color: #1abc9c !important;
+	border-radius: 5px !important;
+	color: white !important;
+}
+
+#edit:hover, #support:hover, #report:hover, #delete:hover, #github:hover, #websitelink:hover {
+	transition: all 0.8s !important;
+	background-color: #23272A !important;
+    color: #e05454 !important;
+}
+
+.titleandvote .votebutton {
+	background-color: #23272A !important;
+    color: #1abc9c !important;
+	border-radius: 5px !important;
+	color: white !important;
+}
+
+.titleandvote:hover .votebutton:hover {
+	transition: all 0.8s !important;
+	background-color: #23272A !important;
+    color: #e05454 !important;
+    border-left-style: solid;
+}
+
+.votebutton {
+	background-color: #23272A !important;
+    color: #1abc9c !important;
+	border-radius: 5px !important;
+	color: #e05454 !important;
+}
+.votebutton:hover {
+	transition: all 0.8s !important;
+	background-color: #23272A !important;
+    color: #e05454 !important;
+    border-left-style: solid;
+}
+
+.atag {
+	background-color: #23272A !important;
+    color: #1abc9c !important;
+	border-radius: 5px !important;
+	color: white !important;
+}
+.atag:hover {
+	transition: all 0.8s !important;
+	background-color: #23272A !important;
+    color: #e05454 !important;
+    border-left-style: solid;
+}
+.atag:after {
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid #23272A;
+	border-top: 13px solid transparent;
+	content: '';
+	position: absolute;
+	transition: all 0.2s ease-in-out;
+}
+
+.atag:hover:after {
+	background: transparent !important;
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid #23272A;
+	border-top: 13px solid transparent;
+	transition: all 0.2s ease-in-out;
+}
+
+
+#createdby b, #createdby span {
+	transition: all 0.8s !important;
+	background-color: #23272A !important;
+    color: white !important;
+}
+#createdby b:hover,  #createdby span:hover {
+	background-color: #ffffff3b;
+    color: #e05454 !important;
+}
+#createdby {
+  color: white !important; 
+}
+
+.content h1 {
+    color: white !important;
+}
+
+.longdescription .content {
+	background-color: #23272A !important;
+	min-height: 50px;
+	position: relative;
+	padding: 20px;
+	text-align: left !important;
+	flex-direction: column;
+	flex-wrap: nowrap;
+    color: white !important;
+}
+.longdescription .content:hover {
+	min-height: 50px;
+	position: relative;
+	padding: 20px;
+	text-align: left !important;
+	flex-direction: column;
+	flex-wrap: nowrap;
+    color: white !important;
+}
+h1, p {
+	text-align:center;
+}
+.left-container div:first-child {
+	font-size: 20px;
+}
+
+
+</style>
+<h1>ZeroTwo</h1>
+<p>Welcome to ZeroTwo's DiscordBots page.</p>
+<p>Voting will reward you with 5000 credits and a random card for the cardgame.</p>
+<h1> • [Profile System] </h1>
+<h1> • [Global Economy] </h1>
+<h1> • [Music Bot with HQ/Lagfree Music] </h1>
+<h1> • [Vote Rewards w/votestreak] </h1>
+<h1> • [Web-Dashboard] </h1>
+<h1> • [Leveling messages] </h1>
+<h1> • [Auto role] </h1>
+
+<hr>
+<p>For further information or feature requests, join my Support-Discord.</p>
