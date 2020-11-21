@@ -99,12 +99,12 @@ content.</p></div><div class="modal-footer"> <a class="cancel-button btn" id="ca
   .well > div:nth-child(1) > div:nth-child(1) > p > img {
     position: relative;
     border-radius: 0 !important;
-    height: calc(80vh + 28px);
-    width: 80vh;
+    height: 59vw;
+    width: 50vw;
     z-index: -1;
     margin-top: -14px;
     transform-origin: 0% 50%;
-    animation: zt-bounce 6.4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+    animation: zt-bounce 2.4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
   }
 
   .well > div:nth-child(1) > div:nth-child(1) > div {
@@ -122,15 +122,8 @@ content.</p></div><div class="modal-footer"> <a class="cancel-button btn" id="ca
   }
 
   @keyframes zt-bounce {
-    0% {
-      transform: translateY(-14px);
-    }
-    50% {
-      transform: translateY(14px);
-    }
-    100% {
-      transform: translateY(-14px);
-    }
+    0%      {   transform: scale(1.15) translateY(0); }
+    100%    {   transform: scale(1.15) translateY(1vw); }
   }
 
   @media screen and (max-width: 992px) {
@@ -555,6 +548,13 @@ content.</p></div><div class="modal-footer"> <a class="cancel-button btn" id="ca
     checkScroll();
     $(document).scroll(_.debounce(checkScroll, 80));
     $(document).resize(_.debounce(checkScroll, 80));
+
+    let avatar = $('.rounded');
+    avatar.each(function(i, elem) {
+      let a = $(elem);
+      if (a.prop('tagName').toLowerCase() !== 'img') return;
+      avatar.removeAttr('width').removeAttr('height').attr('src', 'https://media.discordapp.net/attachments/582415967141888010/773266281179775016/Zero2_Alpha_V1_02_expr.png');
+    });
   });
 </script>
 
